@@ -1,5 +1,13 @@
 @import "components/materialize";
 
-body {
-  background-color: red;
-}
+// commons
+@import "common/variables";
+@import "common/general";
+
+// sections
+@import "layouts/sections/header";
+@import "layouts/sections/footer";
+
+// blocks
+@import "layouts/blocks/planning";
+@import "layouts/blocks/products";

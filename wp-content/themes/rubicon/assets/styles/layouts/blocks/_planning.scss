@@ -1,0 +1,51 @@
+.planning {
+  padding: 20px 0 0 0;
+}
+
+.planning a {
+  position: relative;
+}
+
+.service_block {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #9a9281;
+  transition: all 0.3s ease-in-out;
+}
+
+.planning a:hover .service_block {
+  color: #3f3c39;
+}
+
+.planning a img {
+  margin: 0 auto;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.planning a:hover img {
+  border: 3px solid #6a979b;
+}
+
+.planning a .link_title {
+  display: block;
+  margin: 18px 10px 22px;
+  padding: 0;
+  font-size: 15px;
+  color: #3f3c39;
+  transition: all 0.3s ease-in-out;
+}
+
+.planning a:hover .link_title {
+  color: #6a979b;
+}
+
+.service_txt {
+  display: block;
+  padding: 0 5px;
+}

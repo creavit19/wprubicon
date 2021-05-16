@@ -12528,10 +12528,159 @@ input[type=range]::-ms-thumb {
   }
 }
 
-/* line 3, stdin */
+/* line 1, assets/styles/common/_general.scss */
 
 body {
-  background-color: red;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: #9a9281;
+  background-attachment: fixed;
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAPAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgADwAZAwERAAIRAQMRAf/EAGEAAQEBAQAAAAAAAAAAAAAAAAIDAAcBAQEAAAAAAAAAAAAAAAAAAAACEAEAAQIEBQQDAAAAAAAAAAABAgARITESIkFRYUJSkTIDE/Fi0hEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A4zGCoAx05OG0w24+6PWpUTKD2M73jlg27XV+KAz3wJAsTh3RTEbeRwKDfZ8v7+kv5oHJkxT5AjHG+OqOWbkaelBNIi6tNi32XRLPt1XxTlyoFHbdzmBeDZle1wk+XWgru8X1oP/Z);
+  background-position: 0 0 !important;
+  background-repeat: repeat;
+}
+
+/* line 17, assets/styles/common/_general.scss */
+
+.col.s12.clear-padding {
+  padding: 0;
+}
+
+/* line 1, assets/styles/layouts/sections/_header.scss */
+
+.brand-logo > img {
+  width: 100%;
+}
+
+/* line 5, assets/styles/layouts/sections/_header.scss */
+
+.email_block {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 5px 0 4px 33px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZlJREFUeNrslsFHBHEUx3crMddYlv6AiD216tK1LkWiJbukw1SKJUVarQ4p0Sm2U22KtYlYoujSITpFp4iIiOi0xBKR6fv4dhnT7Mz8flNiHh9jd8x+3/u973uzccuyYr8dLbE/iEg01GjbK61lcS0DI4Tf3wHzU/nVT3ulo2AYvGoU+wAzoAG6nY53DGyDDLjTIFgHI2AALLv1NAVO5CjAhYLgI5PfYjFNjZQEZ+CQvfAbVyAPqizCs3vFTMfgBZjsjZeQRHdBjckHGplN0E+D1V2eF1cuggdWaKjO6SRYAH3slT0aTCrJJLUth32KZ9iz73gGgzSLGO/d13JwuVcEXWAFTIMceOLcyZEe8L6YZoJeaFWp9IgC6/ycoLNvQQGcUlCilwumqHK8N3Ri2fZ9OyiBS9Bhu5fltRJEVEZljovC7y4WM52Daz+iYoZx9ioRcCPJsxtsjSfRHHdlSmENGmyLnNZbM9ECF/SQhoXfSQOaXB6OohVmNavx1dZDcy39NKcmZy8dwkv83qnaePQXNBL9t6JfAgwAwTNSkt/JAGIAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  line-height: 20px;
+  font-size: 13px;
+  color: #9a9281;
+}
+
+/* line 17, assets/styles/layouts/sections/_header.scss */
+
+.email_block::before {
+  content: 'Email: ';
+}
+
+/* line 21, assets/styles/layouts/sections/_header.scss */
+
+.slogan {
+  color: #ccc;
+  padding: 3px 0;
+}
+
+/* line 1, assets/styles/layouts/sections/_footer.scss */
+
+.copyright {
+  padding: 10px;
+}
+
+/* line 1, assets/styles/layouts/blocks/_planning.scss */
+
+.planning {
+  padding: 20px 0 0 0;
+}
+
+/* line 5, assets/styles/layouts/blocks/_planning.scss */
+
+.planning a {
+  position: relative;
+}
+
+/* line 9, assets/styles/layouts/blocks/_planning.scss */
+
+.service_block {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #9a9281;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 18, assets/styles/layouts/blocks/_planning.scss */
+
+.planning a:hover .service_block {
+  color: #3f3c39;
+}
+
+/* line 22, assets/styles/layouts/blocks/_planning.scss */
+
+.planning a img {
+  margin: 0 auto;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 31, assets/styles/layouts/blocks/_planning.scss */
+
+.planning a:hover img {
+  border: 3px solid #6a979b;
+}
+
+/* line 35, assets/styles/layouts/blocks/_planning.scss */
+
+.planning a .link_title {
+  display: block;
+  margin: 18px 10px 22px;
+  padding: 0;
+  font-size: 15px;
+  color: #3f3c39;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 44, assets/styles/layouts/blocks/_planning.scss */
+
+.planning a:hover .link_title {
+  color: #6a979b;
+}
+
+/* line 48, assets/styles/layouts/blocks/_planning.scss */
+
+.service_txt {
+  display: block;
+  padding: 0 5px;
+}
+
+/* line 1, assets/styles/layouts/blocks/_products.scss */
+
+.products {
+  text-align: center;
+}
+
+/* line 5, assets/styles/layouts/blocks/_products.scss */
+
+.products:hover h3 {
+  color: #777;
+}
+
+/* line 9, assets/styles/layouts/blocks/_products.scss */
+
+.products img {
+  width: 100%;
+  padding: 5%;
 }
 
 

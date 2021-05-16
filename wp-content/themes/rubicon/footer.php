@@ -5,8 +5,6 @@
 			</footer>
 		</div>
 	</div>
-	<script type="text/javascript" src="<?php echo TEMP_DIR ?>libs/materialize/js/materialize.min.js"></script>
-	<script type="text/javascript" src="<?php echo TEMP_DIR ?>js/app.js"></script>
     <?php wp_footer(); ?>
 </body>
 </html>

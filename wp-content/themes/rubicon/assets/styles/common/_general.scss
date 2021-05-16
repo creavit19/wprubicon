@@ -1,0 +1,19 @@
+body {
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: #9a9281;
+  background-attachment: fixed;
+  background-image: url(../images/bg.jpg);
+  background-position: 0 0 !important;
+  background-repeat: repeat;
+}
+
+.col.s12.clear-padding {
+  padding: 0;
+}
