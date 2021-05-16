@@ -12528,7 +12528,30 @@ input[type=range]::-ms-thumb {
   }
 }
 
-/* line 1, assets/styles/common/_general.scss */
+@font-face {
+  font-family: icons;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/material_icons.woff2) format("woff2");
+}
+
+/* line 8, assets/styles/common/_general.scss */
+
+.material-icons {
+  font-family: icons, 'Arial Narrow', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+/* line 22, assets/styles/common/_general.scss */
 
 body {
   overflow-x: hidden;
@@ -12546,7 +12569,7 @@ body {
   background-repeat: repeat;
 }
 
-/* line 17, assets/styles/common/_general.scss */
+/* line 38, assets/styles/common/_general.scss */
 
 .col.s12.clear-padding {
   padding: 0;
