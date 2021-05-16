@@ -18,15 +18,14 @@
 	white-space: nowrap;
 	word-wrap: normal;
 	direction: ltr;
-	-moz-font-feature-settings: 'liga';
-	-moz-osx-font-smoothing: grayscale;
+	
 }
 
 body {
-	overflow-x:hidden;
-	position:relative;
+	overflow-x: hidden;
+	position: relative;
 	margin: 0;
-	padding:0;
+	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	font-weight:300;
 	font-size: 13px;
@@ -59,7 +58,7 @@ body {
 	color: #ccc;
 	padding: 3px 0;
 }
-.col.clear-padding{
+.col.s12.clear-padding{
 	padding: 0;
 }
 
