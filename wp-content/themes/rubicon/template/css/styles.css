@@ -1,0 +1,122 @@
+/* fallback */
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../libs/materialize/material_icons.woff2) format('woff2');
+}
+  
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-moz-font-feature-settings: 'liga';
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	overflow-x:hidden;
+	position:relative;
+	margin: 0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+	font-size: 13px;
+	line-height: 20px;
+	color: #9a9281;
+	background-attachment: fixed;
+    background-image: url(../img/bg.jpg);
+    background-position: 0 0 !important;
+    background-repeat: repeat;
+}
+.brand-logo>img {
+	width: 100%;
+}
+.email_block {
+	display:inline-block;
+	margin:30px auto;
+	padding:5px 0 4px 33px;
+	background-image:url(../img/email_block.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	line-height:20px;
+	font-size:13px;
+	color:#9a9281;
+}
+.email_block::before{
+	content: 'Email: ';
+	
+}
+.slogan{
+	color: #ccc;
+	padding: 3px 0;
+}
+.col.clear-padding{
+	padding: 0;
+}
+
+.planning{
+	padding: 20px 0 0 0;
+}
+.planning a {
+	position:relative;
+}
+
+.service_block {
+	display:block;
+	margin: 0;
+	padding:0;
+	text-align:center;
+	color:#9a9281;
+	transition: all 0.3s ease-in-out;
+}
+.planning a:hover .service_block {
+	color:#3f3c39;
+}
+.planning a img {
+	margin: 0 auto;
+	width:175px;
+	height:175px;
+	border-radius:50%;
+	border:3px solid #fff;
+	transition: all 0.5s ease-in-out;
+}
+.planning a:hover img{
+	border:3px solid #6a979b;
+}
+.planning a .link_title {
+	display:block;
+	margin:18px 10px 22px;
+	padding: 0;
+	font-size:15px;
+	color:#3f3c39;
+	transition: all 0.3s ease-in-out;
+}
+.planning a:hover .link_title {
+	color:#6a979b;
+}
+.service_txt {
+	display:block;
+	padding:0 5px;
+}
+.products{
+	text-align: center;
+}
+.products:hover h3{
+	color: #777;
+}
+.products img{
+	width: 100%;
+	padding: 5%;
+}
+.copyright{
+	padding: 10px;
+}
