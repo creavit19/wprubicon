@@ -4,7 +4,7 @@
 
 .email_block {
   display: inline-block;
-  margin: 30px auto;
+  margin: 10px 15px 10px 15px;
   padding: 5px 0 4px 33px;
   background-image: url(../images/email_block.png);
   background-repeat: no-repeat;
@@ -14,8 +14,16 @@
   color: #9a9281;
 }
 
-.email_block::before {
-  content: 'Email: ';
+.phone_block {
+  display: inline-block;
+  margin: 10px 15px 10px 15px;
+  padding: 5px 0 4px 33px;
+  background-image: url(../images/phone_block.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  line-height: 20px;
+  font-size: 13px;
+  color: #9a9281;
 }
 
 .slogan {

@@ -12585,7 +12585,7 @@ body {
 
 .email_block {
   display: inline-block;
-  margin: 30px auto;
+  margin: 10px 15px 10px 15px;
   padding: 5px 0 4px 33px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZlJREFUeNrslsFHBHEUx3crMddYlv6AiD216tK1LkWiJbukw1SKJUVarQ4p0Sm2U22KtYlYoujSITpFp4iIiOi0xBKR6fv4dhnT7Mz8flNiHh9jd8x+3/u973uzccuyYr8dLbE/iEg01GjbK61lcS0DI4Tf3wHzU/nVT3ulo2AYvGoU+wAzoAG6nY53DGyDDLjTIFgHI2AALLv1NAVO5CjAhYLgI5PfYjFNjZQEZ+CQvfAbVyAPqizCs3vFTMfgBZjsjZeQRHdBjckHGplN0E+D1V2eF1cuggdWaKjO6SRYAH3slT0aTCrJJLUth32KZ9iz73gGgzSLGO/d13JwuVcEXWAFTIMceOLcyZEe8L6YZoJeaFWp9IgC6/ycoLNvQQGcUlCilwumqHK8N3Ri2fZ9OyiBS9Bhu5fltRJEVEZljovC7y4WM52Daz+iYoZx9ioRcCPJsxtsjSfRHHdlSmENGmyLnNZbM9ECF/SQhoXfSQOaXB6OohVmNavx1dZDcy39NKcmZy8dwkv83qnaePQXNBL9t6JfAgwAwTNSkt/JAGIAAAAASUVORK5CYII=);
   background-repeat: no-repeat;
@@ -12597,11 +12597,19 @@ body {
 
 /* line 17, assets/styles/layouts/sections/_header.scss */
 
-.email_block::before {
-  content: 'Email: ';
+.phone_block {
+  display: inline-block;
+  margin: 10px 15px 10px 15px;
+  padding: 5px 0 4px 33px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAB7klEQVRIib2Xy6rqMBSGHfgGZ7+hL5ZEjZSKRZw4MgNFsBOHcaITFQQHCkVRevnPpDu0NU1jlL3gh5aGfKxLVlZbLQsTQrQZYx1CiKSUxoQQ/Cp/l4yxjhCibbOf0TjnP4QQWYRYSHLOf5yAlFL/TRgqEfCtYUKINqU0+gRYAEeNIc+BSd0mQRC4gBMjuM5Dxhju9zsAIAxDJ4/fyiGlFJPJBEWjlH6e47xKXxZ6ngcASNMU2+1WQQ+Hg1OOS1Vddywej4cCrVarkreDwcAFLFXx1C2q2mKxUM+3283JWyFEu5V3Gu2CNE1L0P1+jziOkSSJUyXnRdmpDS0hBNfrtQQ9Ho9OoJcQV3tpUcvlsgTt9XofQymlcashFCVot9v9hqcwQgkhqikAwHQ6/RtosTFEUfQdqCmnv4rjWIGHw+FXctp4XwZBoKBpmr58D8MQADCbzWzA0nhOizqfzwqcJInqSJzzUrE17cMY6xg7UlU6ez6fOJ1O6n2z2Rj3UNecTYirYS6aEML2aMnGW0an+XyuBa/Xa/V8uVzqiuif1X2qU7VTAYCUElmWAQB2u50OqJ+Z3pmNxuOxggBAlmXwPA/9fl8H1E8ONjOSTqPRCL7vm86leUYqgP9uGnTNcQ3Qfu4tmuuE/1KlLvbtf5n/N8oo7j07OawAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  line-height: 20px;
+  font-size: 13px;
+  color: #9a9281;
 }
 
-/* line 21, assets/styles/layouts/sections/_header.scss */
+/* line 29, assets/styles/layouts/sections/_header.scss */
 
 .slogan {
   color: #ccc;

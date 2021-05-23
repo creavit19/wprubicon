@@ -1,7 +1,10 @@
+<?php
+require_once THEME_DIR.'/inc/classes/ThemeHeader.class.php';
+$header = new ThemeHeader();
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <title><?php wp_title(''); ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,18 +16,13 @@
     <div class='container'>
 		<div class="row">
 			<header>
-				<div class="col s12 grey darken-4">
-					<div class="slogan">
-						The best hand tools for home and work
-					</div>
-				</div>
+				<?php echo $header->get_header_top(); ?>
 				<div class="col s12 lime lighten-5">
 					<div class="row">
-						<div class="col s12 m7">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-logo"><img src="<?php echo TEMP_DIR ?>img/logo.png" alt="" /></a>
-						</div>
-						<div class="col s12 m5 center-align">
-							<div class="email_block"><a href="#">info@rubicontools.com</a></div>
+            <?php echo $header->get_logo(); ?>
+						<div class="col s12 m5 left-align">
+              <?php echo $header->get_email(); ?>
+              <?php echo $header->get_phone(); ?>
 						</div>
 					</div>
 				</div>
