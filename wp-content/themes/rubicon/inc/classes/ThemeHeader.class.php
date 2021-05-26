@@ -12,7 +12,7 @@ class ThemeHeader {
           {$top_slogan}
         </div>
       </div>
-    HTML;
+HTML;
     return $block;
   }
   function get_logo(){
@@ -22,7 +22,7 @@ class ThemeHeader {
       <div class="col s12 m7">
         <a href="{$url}" class="brand-logo"><img src="{$logo_url}" alt="" /></a>
       </div>
-    HTML;
+HTML;
     return $block;
   }
   function get_email(){
@@ -30,7 +30,7 @@ class ThemeHeader {
     $email = $this->acf_fields['email'];
     $block = <<<HTML
       <div class="email_block"><span>{$email_title}</span><a href="#">{$email}</a></div>
-    HTML;
+HTML;
     return $block;
   }
   function get_phone(){
@@ -38,7 +38,7 @@ class ThemeHeader {
     $phone_number = $this->acf_fields['phone_number'];
     $block = <<<HTML
       <div class="phone_block"><span>{$phone_title}</span><span>{$phone_number}</span></div>
-    HTML;
+HTML;
     return $block;
   }
 }
