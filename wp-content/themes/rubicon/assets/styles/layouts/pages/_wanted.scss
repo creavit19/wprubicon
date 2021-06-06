@@ -109,11 +109,11 @@
   color: red;
   padding: 0.3em;
   border: 1px solid grey;
-  rotate: -15deg;
+  transform: rotate(-15deg);
   transition: all 0.5s ease-out;
 }
 
 .wanted-wrap:hover .price-reward {
   font-size: 1.5em;
-  transform: rotate(360deg);
+  transform: rotate(345deg);
 }
