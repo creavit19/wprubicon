@@ -13445,6 +13445,17 @@ input[type=range]::-ms-thumb {
 
 /* line 8, assets/styles/common/_general.scss */
 
+.disabled {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+
+/* line 14, assets/styles/common/_general.scss */
+
 .material-icons {
   font-family: icons, 'Arial Narrow', Arial, sans-serif;
   font-weight: normal;
@@ -13459,7 +13470,7 @@ input[type=range]::-ms-thumb {
   direction: ltr;
 }
 
-/* line 22, assets/styles/common/_general.scss */
+/* line 28, assets/styles/common/_general.scss */
 
 body {
   overflow-x: hidden;
@@ -13477,19 +13488,19 @@ body {
   background-repeat: repeat;
 }
 
-/* line 38, assets/styles/common/_general.scss */
+/* line 44, assets/styles/common/_general.scss */
 
 .col.s12.clear-padding {
   padding: 0;
 }
 
-/* line 42, assets/styles/common/_general.scss */
+/* line 48, assets/styles/common/_general.scss */
 
 .relative {
   position: relative;
 }
 
-/* line 46, assets/styles/common/_general.scss */
+/* line 52, assets/styles/common/_general.scss */
 
 .absolute {
   position: absolute;

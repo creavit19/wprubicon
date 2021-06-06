@@ -5,6 +5,12 @@
   src: url(../../fonts/material_icons.woff2) format('woff2');
 }
 
+.disabled {
+  pointer-events: none;
+  user-select: none;
+  cursor: default;
+}
+
 .material-icons {
   font-family: icons, 'Arial Narrow', Arial, sans-serif;
   font-weight: normal;

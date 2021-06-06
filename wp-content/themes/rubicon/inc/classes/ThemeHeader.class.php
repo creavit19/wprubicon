@@ -18,9 +18,10 @@ HTML;
   function get_logo(){
     $url = esc_url( home_url( '/' ) );
     $logo_url = $this->acf_fields['logo']['url'];
+    $dis_if_front = is_front_page() ? ' disabled' : '';
     $block = <<<HTML
       <div class="col s12 m7">
-        <a href="{$url}" class="brand-logo"><img src="{$logo_url}" alt="" /></a>
+        <a href="{$url}" class="brand-logo{$dis_if_front}"><img src="{$logo_url}" alt="" /></a>
       </div>
 HTML;
     return $block;
