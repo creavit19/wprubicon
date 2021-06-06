@@ -131,7 +131,12 @@ function render(data) {
   var htmlData = '';
   data.items.forEach(function (item) {
     var priceReward;
-    if (item.reward) priceReward = /\$([0-9,]+)(\s?million)?s?/.exec(item.reward)[0];
+
+    if (item.reward) {
+      var arr = /\$([0-9,]+)(\s?million)?s?/.exec(item.reward);
+      if (arr) priceReward = arr[0];
+    }
+
     htmlData += "<div class=\"col s12 m6 l4 wanted-item\">\n                  <div class=\"wanted-wrap relative\">";
     htmlData += "<a href=\"".concat(item.link_url, "\" target=\"_blank\" class=\"wanted-slider\">");
     if (priceReward) htmlData += "<div class=\"price-reward\">".concat(priceReward, "</div>");

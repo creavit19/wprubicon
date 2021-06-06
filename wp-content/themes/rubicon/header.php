@@ -7,8 +7,6 @@ $header = new ThemeHeader();
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="<?php echo TEMP_DIR ?>img/favicon/favicon.ico" type="image/x-icon">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

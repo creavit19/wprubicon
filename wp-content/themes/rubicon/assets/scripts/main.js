@@ -44,7 +44,9 @@ function render(data){
   let htmlData = '';
   data.items.forEach(function(item){
     let priceReward;
-    if(item.reward) priceReward = /\$([0-9,]+)(\s?million)?s?/.exec(item.reward)[0];
+    if(item.reward) { let arr = /\$([0-9,]+)(\s?million)?s?/.exec(item.reward);
+                      if(arr) priceReward = arr[0];
+                    }
     htmlData += `<div class="col s12 m6 l4 wanted-item">
                   <div class="wanted-wrap relative">`;
       htmlData += `<a href="${item.link_url}" target="_blank" class="wanted-slider">`;
