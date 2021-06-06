@@ -1,4 +1,5 @@
 @import "components/materialize";
+@import "node_modules/select2/dist/css/select2.min";
 
 // commons
 @import "common/variables";
@@ -11,3 +12,6 @@
 // blocks
 @import "layouts/blocks/planning";
 @import "layouts/blocks/products";
+
+// pages
+@import "layouts/pages/wanted";

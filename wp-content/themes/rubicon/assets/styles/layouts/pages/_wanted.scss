@@ -1,0 +1,119 @@
+#ajax-out {
+  min-height: 50vh;
+}
+
+#rendering {
+  font-size: 13px;
+  padding: 0.5em;
+}
+
+.row .col.wanted-item {
+  padding: 0.5em;
+}
+
+.row .col.wanted-item .wanted-wrap {
+  padding: 1em;
+  border: 1px solid grey;
+  border-radius: 0.5em;
+  height: 55em;
+}
+
+.row .col.wanted-item .wanted-wrap a.wanted-slider {
+  display: block;
+  height: 35em;
+  overflow: hidden;
+}
+
+.wanted-docket {
+  height: 18em;
+  overflow: hidden;
+}
+
+.wanted-name {
+  margin: 1.5em 0 1.5em 0;
+}
+
+.wanted-name a:hover {
+  color: red;
+  text-decoration: solid;
+}
+
+.wanted-reward {
+  color: orange;
+}
+
+.pagination {
+  font-size: 1.3em;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.pagination span {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 2em;
+  height: 2em;
+}
+
+.pagination span.round {
+  border: 1px solid #251be2;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #4a4a4a;
+}
+
+.pagination span.round:hover:not(.active):not(.deactive) {
+  background-color: #575980;
+  border-color: #575980;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pagination span.round.active {
+  background-color: #e8983d;
+  border-color: #e8983d;
+  color: #fff;
+  cursor: default;
+}
+
+.pagination span.round.deactive {
+  background-color: #afafaf;
+  border-color: #afafaf;
+  color: #fff;
+  cursor: default;
+}
+
+.spinner {
+  visibility: hidden;
+}
+
+.spinner div {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.spinner img {
+  width: 100%;
+}
+
+.price-reward {
+  position: absolute;
+  z-index: 9999999;
+  font-weight: bold;
+  top: 0.3em;
+  right: 0.3em;
+  background-color: yellow;
+  color: red;
+  padding: 0.3em;
+  border: 1px solid grey;
+  rotate: -15deg;
+  transition: all 0.5s ease-out;
+}
+
+.wanted-wrap:hover .price-reward {
+  font-size: 1.5em;
+  transform: rotate(360deg);
+}

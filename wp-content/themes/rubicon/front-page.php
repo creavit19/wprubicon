@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 			<main>
 				<div class="col s12 clear-padding">
-					<div class="carousel carousel-slider">
+					<div class="carousel carousel-slider" id="main-slider">
 						<a class="carousel-item" href="#one!"><img src="<?php echo TEMP_DIR ?>img/slider/slide1.jpg"></a>
 						<a class="carousel-item" href="#two!"><img src="<?php echo TEMP_DIR ?>img/slider/slide2.jpg"></a>
 						<a class="carousel-item" href="#three!"><img src="<?php echo TEMP_DIR ?>img/slider/slide3.jpg"></a>
-					  </div>
+					</div>
 				</div>
 				<div class="col s12 lime lighten-5">
 					<div class="row">
