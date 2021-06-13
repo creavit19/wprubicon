@@ -13490,17 +13490,24 @@ body {
 
 /* line 44, assets/styles/common/_general.scss */
 
+h1 {
+  font-size: 2.1rem;
+  margin: 1.4rem 0 0.84rem 0;
+}
+
+/* line 49, assets/styles/common/_general.scss */
+
 .col.s12.clear-padding {
   padding: 0;
 }
 
-/* line 48, assets/styles/common/_general.scss */
+/* line 53, assets/styles/common/_general.scss */
 
 .relative {
   position: relative;
 }
 
-/* line 52, assets/styles/common/_general.scss */
+/* line 57, assets/styles/common/_general.scss */
 
 .absolute {
   position: absolute;
@@ -13807,6 +13814,13 @@ body {
   font-size: 1.5em;
   -webkit-transform: rotate(345deg);
           transform: rotate(345deg);
+}
+
+/* line 1, assets/styles/layouts/pages/_single.scss */
+
+.post-thumbnail img {
+  width: 100%;
+  margin: 1em 0;
 }
 
 
