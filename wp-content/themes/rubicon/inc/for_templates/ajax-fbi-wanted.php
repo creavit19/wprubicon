@@ -11,7 +11,7 @@ function ajax_get_suspects_data() {
       if(empty($api_raw_data)) {
         $output = array(
           'status' => 'error',
-          'error' => 'Хуйня какаята...',
+          'error' => 'No connection to the server.',
         );
         wp_die(json_encode($output));
       };

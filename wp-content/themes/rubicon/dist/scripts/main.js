@@ -115,6 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
   }
 
+  if (themeVars.is_auth) document.getElementById('mobile-demo').style.top = '46px';
   window.spinner = document.querySelector('.spinner');
 }); // Функция запроса данных
 
@@ -160,7 +161,7 @@ function render(data) {
     paginEndSp = paginationEnd < data.pages;
     paginLong = data.pages > 5;
     htmlData += "<div class=\"col s12\">\n                  <div class=\"pagination\">";
-    if (paginLong) htmlData += "<span id=\"first\" class=\"round".concat(data.page == 1 ? ' deactive' : '', "\"><<</span>");
+    if (paginLong) htmlData += "<span id=\"first\" class=\"round".concat(data.page == 1 ? ' deactive' : '', "\">\xAB</span>");
     htmlData += "<span id=\"prev\" class=\"round".concat(data.page == 1 ? ' deactive' : '', "\"><</span>");
     if (paginBeginSp) htmlData += "<span>...</span>";
 
@@ -170,7 +171,7 @@ function render(data) {
 
     if (paginEndSp) htmlData += "<span>...</span>";
     htmlData += "<span id=\"next\" class=\"round".concat(data.page == data.pages ? ' deactive' : '', "\">></span>");
-    if (paginLong) htmlData += "<span id=\"last\" class=\"round".concat(data.page == data.pages ? ' deactive' : '', "\">>></span>");
+    if (paginLong) htmlData += "<span id=\"last\" class=\"round".concat(data.page == data.pages ? ' deactive' : '', "\">\xBB</span>");
     htmlData += "</div>\n                </div>";
   }
 

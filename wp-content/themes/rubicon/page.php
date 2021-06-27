@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-			<main class="col s12 lime lighten-5">
       <?php while ( have_posts() ) : the_post(); ?>
 			<article <?php post_class() ?> >
 				<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -13,5 +12,4 @@
 
 			</article>
 		<?php endwhile;?>
-			</main>
 <?php get_footer(); ?>

@@ -1,8 +1,23 @@
+#wpadminbar {
+  position: fixed;
+}
+
 @font-face {
   font-family: icons;
   font-style: normal;
   font-weight: 400;
   src: url(../../fonts/material_icons.woff2) format('woff2');
+}
+
+.ex-clearfix::before {
+  content: "";
+  display: table;
+}
+
+.ex-clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .disabled {

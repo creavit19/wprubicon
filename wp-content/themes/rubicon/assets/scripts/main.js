@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
                                     request(themeVars.ajaxurl + '?action=get_suspects_data&office=' + window.select.value);
                                   };
     }
-
+    
+    if(themeVars.is_auth) document.getElementById('mobile-demo').style.top = '46px';
+    
     window.spinner = document.querySelector('.spinner');
 });
 
@@ -79,7 +81,7 @@ function render(data){
     paginLong = data.pages > 5;
     htmlData += `<div class="col s12">
                   <div class="pagination">`;
-      if(paginLong) htmlData += `<span id="first" class="round${data.page == 1 ? ' deactive' : ''}"><<</span>`;
+      if(paginLong) htmlData += `<span id="first" class="round${data.page == 1 ? ' deactive' : ''}">«</span>`;
       htmlData +=  `<span id="prev" class="round${data.page == 1 ? ' deactive' : ''}"><</span>`;
       if(paginBeginSp) htmlData += `<span>...</span>`;
                     for (let i = paginationBegin; i <= paginationEnd; i++) {
@@ -87,7 +89,7 @@ function render(data){
                     }
       if(paginEndSp) htmlData += `<span>...</span>`;
         htmlData += `<span id="next" class="round${data.page == data.pages ? ' deactive' : ''}">></span>`;
-      if(paginLong) htmlData += `<span id="last" class="round${data.page == data.pages ? ' deactive' : ''}">>></span>`;
+      if(paginLong) htmlData += `<span id="last" class="round${data.page == data.pages ? ' deactive' : ''}">»</span>`;
       htmlData += `</div>
                 </div>`;
   }

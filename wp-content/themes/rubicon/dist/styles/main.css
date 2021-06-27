@@ -13436,6 +13436,12 @@ input[type=range]::-ms-thumb {
   border-color: #5897fb;
 }
 
+/* line 1, assets/styles/common/_general.scss */
+
+#wpadminbar {
+  position: fixed;
+}
+
 @font-face {
   font-family: icons;
   font-style: normal;
@@ -13443,7 +13449,22 @@ input[type=range]::-ms-thumb {
   src: url(../fonts/material_icons.woff2) format("woff2");
 }
 
-/* line 8, assets/styles/common/_general.scss */
+/* line 12, assets/styles/common/_general.scss */
+
+.ex-clearfix::before {
+  content: "";
+  display: table;
+}
+
+/* line 17, assets/styles/common/_general.scss */
+
+.ex-clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 23, assets/styles/common/_general.scss */
 
 .disabled {
   pointer-events: none;
@@ -13454,7 +13475,7 @@ input[type=range]::-ms-thumb {
   cursor: default;
 }
 
-/* line 14, assets/styles/common/_general.scss */
+/* line 29, assets/styles/common/_general.scss */
 
 .material-icons {
   font-family: icons, 'Arial Narrow', Arial, sans-serif;
@@ -13470,7 +13491,7 @@ input[type=range]::-ms-thumb {
   direction: ltr;
 }
 
-/* line 28, assets/styles/common/_general.scss */
+/* line 43, assets/styles/common/_general.scss */
 
 body {
   overflow-x: hidden;
@@ -13488,26 +13509,26 @@ body {
   background-repeat: repeat;
 }
 
-/* line 44, assets/styles/common/_general.scss */
+/* line 59, assets/styles/common/_general.scss */
 
 h1 {
   font-size: 2.1rem;
   margin: 1.4rem 0 0.84rem 0;
 }
 
-/* line 49, assets/styles/common/_general.scss */
+/* line 64, assets/styles/common/_general.scss */
 
 .col.s12.clear-padding {
   padding: 0;
 }
 
-/* line 53, assets/styles/common/_general.scss */
+/* line 68, assets/styles/common/_general.scss */
 
 .relative {
   position: relative;
 }
 
-/* line 57, assets/styles/common/_general.scss */
+/* line 72, assets/styles/common/_general.scss */
 
 .absolute {
   position: absolute;
@@ -13554,10 +13575,36 @@ h1 {
   padding: 3px 0;
 }
 
-/* line 1, assets/styles/layouts/sections/_footer.scss */
+/* line 2, assets/styles/layouts/sections/_footer.scss */
 
-.copyright {
-  padding: 10px;
+.social-network ul {
+  margin: 0;
+}
+
+/* line 5, assets/styles/layouts/sections/_footer.scss */
+
+.social-network ul li {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0 1em;
+}
+
+/* line 10, assets/styles/layouts/sections/_footer.scss */
+
+.social-network ul li a {
+  color: white;
+}
+
+/* line 13, assets/styles/layouts/sections/_footer.scss */
+
+.social-network ul li a:hover {
+  color: yellow;
+}
+
+/* line 21, assets/styles/layouts/sections/_footer.scss */
+
+footer .row > div {
+  margin-top: 1em;
 }
 
 /* line 1, assets/styles/layouts/blocks/_planning.scss */
@@ -13639,13 +13686,19 @@ h1 {
   text-align: center;
 }
 
-/* line 5, assets/styles/layouts/blocks/_products.scss */
+/* line 4, assets/styles/layouts/blocks/_products.scss */
+
+.products h3 {
+  font-size: 2.5rem;
+}
+
+/* line 9, assets/styles/layouts/blocks/_products.scss */
 
 .products:hover h3 {
   color: #777;
 }
 
-/* line 9, assets/styles/layouts/blocks/_products.scss */
+/* line 13, assets/styles/layouts/blocks/_products.scss */
 
 .products img {
   width: 100%;
@@ -13677,21 +13730,21 @@ h1 {
   padding: 1em;
   border: 1px solid grey;
   border-radius: 0.5em;
-  height: 55em;
+  height: 46em;
 }
 
 /* line 21, assets/styles/layouts/pages/_wanted.scss */
 
 .row .col.wanted-item .wanted-wrap a.wanted-slider {
   display: block;
-  height: 35em;
+  height: 28em;
   overflow: hidden;
 }
 
 /* line 27, assets/styles/layouts/pages/_wanted.scss */
 
 .wanted-docket {
-  height: 18em;
+  height: 16em;
   overflow: hidden;
 }
 
