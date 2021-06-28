@@ -45,4 +45,4 @@ $header = new ThemeHeader();
                 ) );
             ?>		  
         </header>
-      <main>
+      <main class="ex-clearfix">

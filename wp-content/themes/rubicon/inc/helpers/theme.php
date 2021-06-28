@@ -1,22 +1,21 @@
 <?php
 function get_theme_page_title_block($title, $has_breadcrumbs = true) {
-	$breadcrumbs = yoast_breadcrumb( '<div id="breadcrumbs">','</div>', false );
+  $breadcrumbs = null;
+  if ( function_exists('yoast_breadcrumb') ) {
+    $breadcrumbs = yoast_breadcrumb( '<div id="breadcrumbs">','</div>', false);
+  }
 
-	$html_breadcrumbs = ($has_breadcrumbs) ? '<div class="col-12">'. $breadcrumbs .'</div>' : null;
+	$html_breadcrumbs = ($has_breadcrumbs && $breadcrumbs) ? '<div class="divider"></div><div class="center-align">'. $breadcrumbs .'</div><div class="divider"></div>' : null;
 
 	$block = <<<HTML
-<nav class="breadcrumb-section theme1 bg-lighten2 pt-110 pb-110">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="section-title text-center mb-15">
-					<h2 class="title text-dark text-capitalize">{$title}</h2>
-				</div>
-			</div>
-			{$html_breadcrumbs}
-		</div>
-	</div>
-</nav>
+<div class="col s12 breadcrumb-section">
+  <div class="row">
+    <div class="col s12">
+      <h1 class="page-title">{$title}</h1>
+        {$html_breadcrumbs}
+    </div>
+  </div>
+</div>
 HTML;
 
 	return $block;

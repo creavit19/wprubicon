@@ -72,3 +72,17 @@ h1 {
 .absolute {
   position: absolute;
 }
+
+a {
+  color: #765d54;
+}
+
+a:hover {
+  color: #a95d54;
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}

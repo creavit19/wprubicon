@@ -13534,6 +13534,26 @@ h1 {
   position: absolute;
 }
 
+/* line 76, assets/styles/common/_general.scss */
+
+a {
+  color: #765d54;
+}
+
+/* line 80, assets/styles/common/_general.scss */
+
+a:hover {
+  color: #a95d54;
+  text-decoration: underline;
+}
+
+/* line 85, assets/styles/common/_general.scss */
+
+nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* line 1, assets/styles/layouts/sections/_header.scss */
 
 .brand-logo > img {
@@ -13874,6 +13894,69 @@ footer .row > div {
 .post-thumbnail img {
   width: 100%;
   margin: 1em 0;
+}
+
+/* line 1, assets/styles/layouts/pages/_archive.scss */
+
+.archive-img {
+  display: block;
+  margin-top: 2em;
+  width: 100%;
+}
+
+/* line 6, assets/styles/layouts/pages/_archive.scss */
+
+.archive-img img {
+  width: 100%;
+}
+
+/* line 11, assets/styles/layouts/pages/_archive.scss */
+
+.archive-title {
+  font-size: 2rem;
+  line-height: 150%;
+  margin-top: 1em;
+  margin-left: 2em;
+  text-indent: -2em;
+}
+
+/* line 18, assets/styles/layouts/pages/_archive.scss */
+
+.archive-title a {
+  color: #886f66;
+}
+
+/* line 23, assets/styles/layouts/pages/_archive.scss */
+
+.archive-title a:hover {
+  color: #ca6f66;
+  text-decoration: underline;
+}
+
+/* line 28, assets/styles/layouts/pages/_archive.scss */
+
+.archive-nav {
+  text-align: center;
+  font-size: 1rem;
+  color: #886f66;
+  background-color: transparent;
+  width: 100%;
+  height: 4em;
+  line-height: 1em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 38, assets/styles/layouts/pages/_archive.scss */
+
+.archive-nav h2 {
+  font-size: 1rem;
+}
+
+/* line 42, assets/styles/layouts/pages/_archive.scss */
+
+.archive-nav a {
+  color: #886f66;
 }
 
 

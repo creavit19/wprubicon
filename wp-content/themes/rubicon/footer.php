@@ -3,7 +3,7 @@ require_once THEME_DIR.'/inc/classes/ThemeFooter.class.php';
 $footer = new ThemeFooter();
 ?>
       </main>
-      <footer>
+      <footer class="ex-clearfix">
         <div class="col s12 grey darken-1 white-text">
           <div class="row">
             <div class="col s12 l3 push-l5"><?php dynamic_sidebar( 'footer-phone' ) ?></div>
