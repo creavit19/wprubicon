@@ -1,0 +1,28 @@
+ol.commentlist {
+  ul.children {
+    position: relative;
+    margin-left: 4em;
+
+    &::before {
+      position: absolute;
+      display: block;
+      background: url(../images/reply.svg) no-repeat 50% 50%;
+      content: '';
+      width: 1.5em;
+      height: 1.5em;
+      transform: rotate(180deg);
+      top: 1em;
+      left: -4em;
+    }
+  }
+
+  p {
+    border: 1px solid #9a9281;
+    margin: 0.2em 0;
+    padding: 0.4em;
+  }
+
+  div.comment-body {
+    margin-bottom: 2em;
+  }
+}

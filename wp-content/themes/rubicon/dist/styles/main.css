@@ -13725,6 +13725,42 @@ footer .row > div {
   padding: 5%;
 }
 
+/* line 2, assets/styles/components/_comments.scss */
+
+ol.commentlist ul.children {
+  position: relative;
+  margin-left: 4em;
+}
+
+/* line 6, assets/styles/components/_comments.scss */
+
+ol.commentlist ul.children::before {
+  position: absolute;
+  display: block;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNTEyLjAwMSA1MTIuMDAxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDAxIDUxMi4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzI0LjEwNCwxNTYuMTUySDc2LjUyNmw5MS45NDktOTEuOTQ5bC0yOC4yNjgtMjguMjY4TDAsMTc2LjE0MWwxNDAuMjA2LDE0MC4yMDZsMjguMjY4LTI4LjI2OEw3Ni41MjYsMTk2LjEzaDI0Ny41NzkKCQkJYzgxLjU2MiwwLDE0Ny45MTgsNjYuMzU2LDE0Ny45MTgsMTQ3LjkxOGMwLDM4LjM2LTE5LjM5OCw3MC45NTgtMzUuNjcxLDkxLjU0OGwtMTIuMzkzLDE1LjY4MmwzMS4zNjYsMjQuNzg4bDEyLjM5My0xNS42ODIKCQkJYzIwLjIwMi0yNS41NjMsNDQuMjg0LTY2LjQ5Nyw0NC4yODQtMTE2LjMzNkM1MTIsMjQwLjQ0MSw0MjcuNzEsMTU2LjE1MiwzMjQuMTA0LDE1Ni4xNTJ6Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==) no-repeat 50% 50%;
+  content: '';
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 1em;
+  left: -4em;
+}
+
+/* line 19, assets/styles/components/_comments.scss */
+
+ol.commentlist p {
+  border: 1px solid #9a9281;
+  margin: 0.2em 0;
+  padding: 0.4em;
+}
+
+/* line 25, assets/styles/components/_comments.scss */
+
+ol.commentlist div.comment-body {
+  margin-bottom: 2em;
+}
+
 /* line 1, assets/styles/layouts/pages/_wanted.scss */
 
 #ajax-out {

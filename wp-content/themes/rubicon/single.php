@@ -8,9 +8,10 @@ echo get_theme_page_title_block(get_the_title());
 <div class="col s12">
   <div class="row">
     <div class="col s12">
-    <div class="post-thumbnail"><?php echo $thumbnail ?></div>
-    <div class="content"><?php echo $content ?></div>
-    <div class="date"><?php echo $date ?></div>
+      <div class="post-thumbnail"><?php echo $thumbnail ?></div>
+      <div class="content"><?php echo $content ?></div>
+      <div class="date"><?php echo $date ?></div>
+      <?php comments_template(); ?>
     </div>
   </div>
 </div>

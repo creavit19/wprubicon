@@ -14,8 +14,11 @@ function theme_scripts() {
 
 	// Main JS
 	wp_enqueue_script('main-javascript', asset_path('scripts/main.js'), [ 'jquery' ], '1.0.0', true);
-
-	// Throw variables to front-end
+  
+  // WP comments
+	wp_enqueue_script( 'comment-reply' );
+	
+  // Throw variables to front-end
 	$theme_vars = array(
 		'home'   => get_home_url(),
 		'ajaxurl' => admin_url('admin-ajax.php'),
