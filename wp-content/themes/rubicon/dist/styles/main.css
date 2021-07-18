@@ -13761,6 +13761,13 @@ ol.commentlist div.comment-body {
   margin-bottom: 2em;
 }
 
+/* line 30, assets/styles/components/_comments.scss */
+
+h3#comments {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 /* line 1, assets/styles/layouts/pages/_wanted.scss */
 
 #ajax-out {
@@ -13993,6 +14000,141 @@ ol.commentlist div.comment-body {
 
 .archive-nav a {
   color: #886f66;
+}
+
+/* line 1, assets/styles/layouts/pages/_team.scss */
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* line 6, assets/styles/layouts/pages/_team.scss */
+
+.team label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #947b72;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0.3em;
+  margin: 0 1em;
+  text-transform: uppercase;
+  border-radius: 2em;
+  line-height: 1.5em;
+}
+
+/* line 20, assets/styles/layouts/pages/_team.scss */
+
+.team label:hover {
+  cursor: pointer;
+  color: #c48077;
+  background-color: #f5dcf6;
+}
+
+/* line 27, assets/styles/layouts/pages/_team.scss */
+
+.team input[type="radio"] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 35, assets/styles/layouts/pages/_team.scss */
+
+.team input:checked + label {
+  background-color: #d8bfb6;
+}
+
+/* line 39, assets/styles/layouts/pages/_team.scss */
+
+.team .member {
+  margin: 2em 0;
+}
+
+/* line 43, assets/styles/layouts/pages/_team.scss */
+
+.team .members {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: none;
+  width: 100%;
+  -webkit-box-ordinal-group: 101;
+      -ms-flex-order: 100;
+          order: 100;
+  margin-top: 2em;
+}
+
+/* line 52, assets/styles/layouts/pages/_team.scss */
+
+.team input:checked + label + .members {
+  display: block;
+}
+
+/* line 56, assets/styles/layouts/pages/_team.scss */
+
+.member-avatar {
+  position: relative;
+  display: block;
+}
+
+/* line 60, assets/styles/layouts/pages/_team.scss */
+
+.member-avatar img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* line 66, assets/styles/layouts/pages/_team.scss */
+
+.member-avatar .location {
+  position: absolute;
+  font-weight: bold;
+  bottom: 2em;
+  left: 2em;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #5c0909;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  line-height: 5em;
+  text-align: center;
+}
+
+/* line 82, assets/styles/layouts/pages/_team.scss */
+
+.member-name {
+  margin-top: 0.5em;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #323232;
+}
+
+/* line 92, assets/styles/layouts/pages/_team.scss */
+
+.position {
+  margin-top: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #b83616;
 }
 
 
