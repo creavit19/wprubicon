@@ -1,0 +1,12 @@
+2021-07-19T12:34:53+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\utils.php on line 406
+
+2021-07-19T12:43:12+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\parser\lexer.php on line 516
+
+2021-07-19T13:04:59+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\utils.php on line 406
+
+2021-07-19T13:05:59+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\utils.php on line 415
+
+2021-07-19T13:35:04+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\parser\lexer.php on line 622
+
+2021-07-19T13:46:59+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\utils.php on line 443
+
