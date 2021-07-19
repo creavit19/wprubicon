@@ -1,1 +1,1 @@
-´£ô`<?php exit; ?>a:1:{s:7:"content";a:8:{s:19:"bodhi_svgs_settings";b:1;s:33:"bodhi_svgs_admin_notice_dismissed";b:1;s:15:"acf_pro_license";b:1;s:51:"_transient_timeout_font-awesome-v3-deprecation-data";b:1;s:43:"_transient_font-awesome-v3-deprecation-data";b:1;s:44:"_transient_timeout_cptui_activation_redirect";b:1;s:36:"_transient_cptui_activation_redirect";b:1;s:19:"auto_update_plugins";b:1;}}
+Ónõ`<?php exit; ?>a:1:{s:7:"content";a:2:{s:19:"bodhi_svgs_settings";b:1;s:33:"bodhi_svgs_admin_notice_dismissed";b:1;}}

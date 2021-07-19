@@ -1,4 +1,4 @@
-±£ô`<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:2:"56";s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2021-06-13 12:38:50";s:13:"post_date_gmt";s:19:"2021-06-13 12:38:50";s:12:"post_content";s:2768:"<!-- wp:paragraph -->
+3kõ`<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:2:"56";s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2021-06-13 12:38:50";s:13:"post_date_gmt";s:19:"2021-06-13 12:38:50";s:12:"post_content";s:2768:"<!-- wp:paragraph -->
 <p>Greenlee, part of Emersonâ€™s professional tools portfolio, celebrated its history and industry-leading tool innovation on May 24 when a vintage 1910 Greenlee Variety Woodworker machine makes a stop at its Rockford headquarters. The machine will then be delivered to the National Museum of Industrial History in Bethlehem, Penn., a Smithsonian affiliate, to be displayed in a permanent collection of historic American machinery.</p>
 <!-- /wp:paragraph -->
 
