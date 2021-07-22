@@ -1,4 +1,4 @@
-l,ù`<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:2:"63";s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2021-06-13 12:47:25";s:13:"post_date_gmt";s:19:"2021-06-13 12:47:25";s:12:"post_content";s:2562:"<!-- wp:paragraph -->
+:/ù`<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:2:"63";s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2021-06-13 12:47:25";s:13:"post_date_gmt";s:19:"2021-06-13 12:47:25";s:12:"post_content";s:2562:"<!-- wp:paragraph -->
 <p>Greenlee&nbsp;is adding a state-of-the-art puller to its reliable Greenlee lineup with the new G10 TUGGER. The Greenlee G10 TUGGER features a two-speed custom-designed motor that is capable of continuously pulling up to 8,000 pounds and a maximum pulling force of 10,000 pounds. The improved motor helps increase productivity by reducing downtime, while the force indicator display helps prevent damage to the puller and cable.</p>
 <!-- /wp:paragraph -->
 
