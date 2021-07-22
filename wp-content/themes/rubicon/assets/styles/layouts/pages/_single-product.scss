@@ -1,0 +1,26 @@
+.tabs {
+  background-color: transparent;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  background-color: #dee0cc;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+  background-color: #f9fbe7;
+}
+
+.woocommerce div.product p.price {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.woocommerce div.product span.price {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.woocommerce ul.products li.product .price {
+  font-size: 1.6rem;
+  font-weight: bold;
+}

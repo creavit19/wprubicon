@@ -12,6 +12,7 @@
 // blocks
 @import "layouts/blocks/planning";
 @import "layouts/blocks/products";
+@import "layouts/blocks/action";
 @import "components/comments";
 
 // pages
@@ -19,3 +20,6 @@
 @import "layouts/pages/single";
 @import "layouts/pages/archive";
 @import "layouts/pages/team";
+@import "layouts/pages/catalog";
+@import "layouts/pages/single-product";
+@import "layouts/pages/cart";

@@ -13442,6 +13442,24 @@ input[type=range]::-ms-thumb {
   position: fixed;
 }
 
+/* line 5, assets/styles/common/_general.scss */
+
+main.main-content {
+  min-height: calc(100vh - 306px);
+}
+
+/* line 9, assets/styles/common/_general.scss */
+
+h3 {
+  font-size: 1.8rem;
+}
+
+/* line 13, assets/styles/common/_general.scss */
+
+h2 {
+  font-size: 2rem;
+}
+
 @font-face {
   font-family: icons;
   font-style: normal;
@@ -13449,14 +13467,14 @@ input[type=range]::-ms-thumb {
   src: url(../fonts/material_icons.woff2) format("woff2");
 }
 
-/* line 12, assets/styles/common/_general.scss */
+/* line 24, assets/styles/common/_general.scss */
 
 .ex-clearfix::before {
   content: "";
   display: table;
 }
 
-/* line 17, assets/styles/common/_general.scss */
+/* line 29, assets/styles/common/_general.scss */
 
 .ex-clearfix::after {
   content: "";
@@ -13464,7 +13482,7 @@ input[type=range]::-ms-thumb {
   clear: both;
 }
 
-/* line 23, assets/styles/common/_general.scss */
+/* line 35, assets/styles/common/_general.scss */
 
 .disabled {
   pointer-events: none;
@@ -13475,7 +13493,7 @@ input[type=range]::-ms-thumb {
   cursor: default;
 }
 
-/* line 29, assets/styles/common/_general.scss */
+/* line 41, assets/styles/common/_general.scss */
 
 .material-icons {
   font-family: icons, 'Arial Narrow', Arial, sans-serif;
@@ -13491,7 +13509,7 @@ input[type=range]::-ms-thumb {
   direction: ltr;
 }
 
-/* line 43, assets/styles/common/_general.scss */
+/* line 55, assets/styles/common/_general.scss */
 
 body {
   overflow-x: hidden;
@@ -13509,45 +13527,45 @@ body {
   background-repeat: repeat;
 }
 
-/* line 59, assets/styles/common/_general.scss */
+/* line 71, assets/styles/common/_general.scss */
 
 h1 {
   font-size: 2.1rem;
   margin: 1.4rem 0 0.84rem 0;
 }
 
-/* line 64, assets/styles/common/_general.scss */
+/* line 76, assets/styles/common/_general.scss */
 
 .col.s12.clear-padding {
   padding: 0;
 }
 
-/* line 68, assets/styles/common/_general.scss */
+/* line 80, assets/styles/common/_general.scss */
 
 .relative {
   position: relative;
 }
 
-/* line 72, assets/styles/common/_general.scss */
+/* line 84, assets/styles/common/_general.scss */
 
 .absolute {
   position: absolute;
 }
 
-/* line 76, assets/styles/common/_general.scss */
+/* line 88, assets/styles/common/_general.scss */
 
 a {
   color: #765d54;
 }
 
-/* line 80, assets/styles/common/_general.scss */
+/* line 92, assets/styles/common/_general.scss */
 
 a:hover {
   color: #a95d54;
   text-decoration: underline;
 }
 
-/* line 85, assets/styles/common/_general.scss */
+/* line 97, assets/styles/common/_general.scss */
 
 nav a:hover {
   color: #fff;
@@ -13593,6 +13611,29 @@ nav a:hover {
 .slogan {
   color: #ccc;
   padding: 3px 0;
+}
+
+/* line 34, assets/styles/layouts/sections/_header.scss */
+
+a.header-link-cart {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  width: 2em;
+  height: 2em;
+  line-height: 2.08em;
+  border-radius: 50%;
+  background-color: #a0a0a0;
+  margin-right: 0.5em;
+  padding-right: 0.15em;
+  margin-top: 1em;
+}
+
+/* line 48, assets/styles/layouts/sections/_header.scss */
+
+a.header-link-cart:hover {
+  color: yellow;
 }
 
 /* line 2, assets/styles/layouts/sections/_footer.scss */
@@ -13725,6 +13766,127 @@ footer .row > div {
   padding: 5%;
 }
 
+/* line 1, assets/styles/layouts/blocks/_action.scss */
+
+#action-block {
+  overflow: hidden;
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  border-radius: 0.3em;
+  z-index: 999999;
+  width: 400px;
+  height: 300px;
+}
+
+/* line 12, assets/styles/layouts/blocks/_action.scss */
+
+.action-wrapper {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* line 19, assets/styles/layouts/blocks/_action.scss */
+
+.counter-line {
+  position: absolute;
+  padding: 0 1.5rem;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  height: 5em;
+}
+
+/* line 32, assets/styles/layouts/blocks/_action.scss */
+
+.counter-line a {
+  font-size: 1.7rem;
+  display: block;
+  background-color: #14bca8;
+  text-align: center;
+  padding: 0.3em 1.6em;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* line 41, assets/styles/layouts/blocks/_action.scss */
+
+.counter-line a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* line 48, assets/styles/layouts/blocks/_action.scss */
+
+.counter-block {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* line 53, assets/styles/layouts/blocks/_action.scss */
+
+.counter-block .counter {
+  font-size: 1em;
+  line-height: 1em;
+  padding-bottom: 0.6em;
+}
+
+/* line 59, assets/styles/layouts/blocks/_action.scss */
+
+[data-role="seconds"]::after {
+  content: 'Seconds';
+}
+
+/* line 63, assets/styles/layouts/blocks/_action.scss */
+
+[data-role="minutes"]::after {
+  content: 'Minutes';
+}
+
+/* line 67, assets/styles/layouts/blocks/_action.scss */
+
+[data-role="hours"]::after {
+  content: 'Hours';
+}
+
+/* line 71, assets/styles/layouts/blocks/_action.scss */
+
+[data-role="days"]::after {
+  content: 'Days';
+}
+
+/* line 75, assets/styles/layouts/blocks/_action.scss */
+
+.counter-line .counter-block .counter > div {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 80, assets/styles/layouts/blocks/_action.scss */
+
+.counter-line .counter-block .counter > div::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 0.35em;
+  top: 2.5em;
+  right: 0;
+}
+
 /* line 2, assets/styles/components/_comments.scss */
 
 ol.commentlist ul.children {
@@ -13770,24 +13932,18 @@ h3#comments {
 
 /* line 1, assets/styles/layouts/pages/_wanted.scss */
 
-#ajax-out {
-  min-height: 50vh;
-}
-
-/* line 5, assets/styles/layouts/pages/_wanted.scss */
-
 #rendering {
   font-size: 13px;
   padding: 0.5em;
 }
 
-/* line 10, assets/styles/layouts/pages/_wanted.scss */
+/* line 6, assets/styles/layouts/pages/_wanted.scss */
 
 .row .col.wanted-item {
   padding: 0.5em;
 }
 
-/* line 14, assets/styles/layouts/pages/_wanted.scss */
+/* line 10, assets/styles/layouts/pages/_wanted.scss */
 
 .row .col.wanted-item .wanted-wrap {
   padding: 1em;
@@ -13796,7 +13952,7 @@ h3#comments {
   height: 46em;
 }
 
-/* line 21, assets/styles/layouts/pages/_wanted.scss */
+/* line 17, assets/styles/layouts/pages/_wanted.scss */
 
 .row .col.wanted-item .wanted-wrap a.wanted-slider {
   display: block;
@@ -13804,20 +13960,20 @@ h3#comments {
   overflow: hidden;
 }
 
-/* line 27, assets/styles/layouts/pages/_wanted.scss */
+/* line 23, assets/styles/layouts/pages/_wanted.scss */
 
 .wanted-docket {
   height: 16em;
   overflow: hidden;
 }
 
-/* line 32, assets/styles/layouts/pages/_wanted.scss */
+/* line 28, assets/styles/layouts/pages/_wanted.scss */
 
 .wanted-name {
   margin: 1.5em 0 1.5em 0;
 }
 
-/* line 36, assets/styles/layouts/pages/_wanted.scss */
+/* line 32, assets/styles/layouts/pages/_wanted.scss */
 
 .wanted-name a:hover {
   color: red;
@@ -13825,13 +13981,13 @@ h3#comments {
           text-decoration: solid;
 }
 
-/* line 41, assets/styles/layouts/pages/_wanted.scss */
+/* line 37, assets/styles/layouts/pages/_wanted.scss */
 
 .wanted-reward {
   color: orange;
 }
 
-/* line 45, assets/styles/layouts/pages/_wanted.scss */
+/* line 41, assets/styles/layouts/pages/_wanted.scss */
 
 .pagination {
   font-size: 1.3em;
@@ -13839,7 +13995,7 @@ h3#comments {
   text-align: center;
 }
 
-/* line 51, assets/styles/layouts/pages/_wanted.scss */
+/* line 47, assets/styles/layouts/pages/_wanted.scss */
 
 .pagination span {
   display: inline-block;
@@ -13851,7 +14007,7 @@ h3#comments {
   height: 2em;
 }
 
-/* line 61, assets/styles/layouts/pages/_wanted.scss */
+/* line 57, assets/styles/layouts/pages/_wanted.scss */
 
 .pagination span.round {
   border: 1px solid #251be2;
@@ -13860,7 +14016,7 @@ h3#comments {
   color: #4a4a4a;
 }
 
-/* line 68, assets/styles/layouts/pages/_wanted.scss */
+/* line 64, assets/styles/layouts/pages/_wanted.scss */
 
 .pagination span.round:hover:not(.active):not(.deactive) {
   background-color: #575980;
@@ -13869,7 +14025,7 @@ h3#comments {
   cursor: pointer;
 }
 
-/* line 75, assets/styles/layouts/pages/_wanted.scss */
+/* line 71, assets/styles/layouts/pages/_wanted.scss */
 
 .pagination span.round.active {
   background-color: #e8983d;
@@ -13878,7 +14034,7 @@ h3#comments {
   cursor: default;
 }
 
-/* line 82, assets/styles/layouts/pages/_wanted.scss */
+/* line 78, assets/styles/layouts/pages/_wanted.scss */
 
 .pagination span.round.deactive {
   background-color: #afafaf;
@@ -13887,26 +14043,26 @@ h3#comments {
   cursor: default;
 }
 
-/* line 89, assets/styles/layouts/pages/_wanted.scss */
+/* line 85, assets/styles/layouts/pages/_wanted.scss */
 
 .spinner {
   visibility: hidden;
 }
 
-/* line 93, assets/styles/layouts/pages/_wanted.scss */
+/* line 89, assets/styles/layouts/pages/_wanted.scss */
 
 .spinner div {
   margin: 0 auto;
   width: 40%;
 }
 
-/* line 98, assets/styles/layouts/pages/_wanted.scss */
+/* line 94, assets/styles/layouts/pages/_wanted.scss */
 
 .spinner img {
   width: 100%;
 }
 
-/* line 102, assets/styles/layouts/pages/_wanted.scss */
+/* line 98, assets/styles/layouts/pages/_wanted.scss */
 
 .price-reward {
   position: absolute;
@@ -13924,7 +14080,7 @@ h3#comments {
   transition: all 0.5s ease-out;
 }
 
-/* line 116, assets/styles/layouts/pages/_wanted.scss */
+/* line 112, assets/styles/layouts/pages/_wanted.scss */
 
 .wanted-wrap:hover .price-reward {
   font-size: 1.5em;
@@ -14135,6 +14291,80 @@ h3#comments {
   font-size: 1.2em;
   font-weight: bold;
   color: #b83616;
+}
+
+/* line 1, assets/styles/layouts/pages/_catalog.scss */
+
+mark {
+  background-color: transparent;
+  color: #4a4a4a;
+}
+
+/* line 6, assets/styles/layouts/pages/_catalog.scss */
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* line 11, assets/styles/layouts/pages/_catalog.scss */
+
+.typing {
+  opacity: 0;
+  font-size: 2rem;
+  text-align: left;
+  height: 1.6em;
+  line-height: 1.2;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 0.3em;
+}
+
+/* line 1, assets/styles/layouts/pages/_single-product.scss */
+
+.tabs {
+  background-color: transparent;
+}
+
+/* line 5, assets/styles/layouts/pages/_single-product.scss */
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  background-color: #dee0cc;
+}
+
+/* line 9, assets/styles/layouts/pages/_single-product.scss */
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+  background-color: #f9fbe7;
+}
+
+/* line 13, assets/styles/layouts/pages/_single-product.scss */
+
+.woocommerce div.product p.price {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* line 18, assets/styles/layouts/pages/_single-product.scss */
+
+.woocommerce div.product span.price {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* line 23, assets/styles/layouts/pages/_single-product.scss */
+
+.woocommerce ul.products li.product .price {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* line 1, assets/styles/layouts/pages/_cart.scss */
+
+.woocommerce-cart table.cart img {
+  width: 9em;
 }
 
 

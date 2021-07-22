@@ -42,4 +42,22 @@ HTML;
 HTML;
     return $block;
   }
+  function get_link_cart(){
+    /*
+    ob_start();
+    woocommerce_mini_cart();
+    $mini_cart = ob_get_contents();
+    ob_end_clean();
+    */
+    $url = wc_get_cart_url();
+    $dis_if_cart = is_cart() ? ' disabled' : '';
+    // $prod_count = WC()->cart->get_cart_contents_count();
+    // $prod_count = $prod_count > 0 ? '<span>'.$prod_count.'</span>' : null;
+    $block = <<<HTML
+      <a href="{$url}" class="header-link-cart{$dis_if_cart}">
+        <i class="fa fa-shopping-cart"></i>
+      </a>
+HTML;
+    return $block;
+  }
 }

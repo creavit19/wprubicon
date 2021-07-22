@@ -1,0 +1,6 @@
+2021-07-20T14:36:30+00:00 CRITICAL require_once(): Failed opening required 'D:\OpenServer\domains\rubicon.loc/wp-content/themes/rubicon/template-parts/woocommerce/archive/archive.php' (include_path='.') in D:\OpenServer\domains\rubicon.loc\wp-content\themes\rubicon\woocommerce.php on line 12
+
+2021-07-20T15:31:35+00:00 CRITICAL require_once(): Failed opening required 'D:\OpenServer\domains\rubicon.loc/wp-content/themes/rubicon/template-parts/woocommerce/archive/archive.php' (include_path='.') in D:\OpenServer\domains\rubicon.loc\wp-content\themes\rubicon\woocommerce.php on line 12
+
+2021-07-20T15:37:03+00:00 CRITICAL require_once(): Failed opening required 'D:\OpenServer\domains\rubicon.loc/wp-content/themes/rubicon/template-parts/woocommerce/archive/archive.php' (include_path='.') in D:\OpenServer\domains\rubicon.loc\wp-content\themes\rubicon\woocommerce.php on line 12
+

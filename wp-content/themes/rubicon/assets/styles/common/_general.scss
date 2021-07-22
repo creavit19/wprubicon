@@ -2,6 +2,18 @@
   position: fixed;
 }
 
+main.main-content {
+  min-height: calc(100vh - 306px);
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
 @font-face {
   font-family: icons;
   font-style: normal;

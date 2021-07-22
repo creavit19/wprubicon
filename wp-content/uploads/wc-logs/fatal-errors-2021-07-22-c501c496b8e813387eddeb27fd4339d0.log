@@ -1,0 +1,10 @@
+2021-07-22T00:11:43+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-includes\rest-api.php on line 2957
+
+2021-07-22T01:10:13+00:00 CRITICAL syntax error, unexpected '$block' (T_VARIABLE) in D:\OpenServer\domains\rubicon.loc\wp-content\themes\rubicon\inc\classes\ThemeHeader.class.php on line 56
+
+2021-07-22T03:19:44+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-assets.php on line 9
+
+2021-07-22T07:36:26+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-includes\plugin.php on line 187
+
+2021-07-22T07:36:32+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\modules\login-security\classes\controller\wordfencels.php on line 3
+

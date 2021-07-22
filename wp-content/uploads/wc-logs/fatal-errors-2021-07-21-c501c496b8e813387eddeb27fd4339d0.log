@@ -1,0 +1,48 @@
+2021-07-21T12:04:18+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\StoreApi\Routes\ProductCollectionData.php on line 184
+
+2021-07-21T12:04:20+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\custom-post-type-ui\inc\tools.php on line 15
+
+2021-07-21T19:42:18+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-admin\includes\plugin.php on line 336
+
+2021-07-21T19:42:23+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-admin\includes\plugin.php on line 336
+
+2021-07-21T19:42:38+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-admin\includes\plugin.php on line 336
+
+2021-07-21T19:42:41+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\codepress-admin-columns\classes\Screen.php on line 3
+
+2021-07-21T19:42:41+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-includes\widgets.php on line 649
+
+2021-07-21T19:42:41+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wp-all-import-pro\wp-all-import-pro.php on line 856
+
+2021-07-21T19:42:46+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\advanced-custom-fields-pro\includes\fields\class-acf-field.php on line 175
+
+2021-07-21T19:42:46+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wp-all-import-pro\wp-all-import-pro.php on line 862
+
+2021-07-21T19:42:48+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-includes\functions.php on line 6115
+
+2021-07-21T19:42:48+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordpress-seo\inc\class-wpseo-replacement-variable.php on line 21
+
+2021-07-21T19:42:50+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordpress-seo\src\builders\indexable-social-image-trait.php on line 3
+
+2021-07-21T19:42:54+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordpress-seo\src\builders\indexable-date-archive-builder.php on line 3
+
+2021-07-21T19:42:54+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordpress-seo\src\builders\indexable-system-page-builder.php on line 3
+
+2021-07-21T19:43:02+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordpress-seo\src\integrations\schema-blocks.php on line 3
+
+2021-07-21T19:43:02+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordpress-seo\src\integrations\schema-blocks.php on line 3
+
+2021-07-21T19:43:03+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordpress-seo\src\integrations\schema-blocks.php on line 3
+
+2021-07-21T19:43:06+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-includes\class-wp-object-cache.php on line 296
+
+2021-07-21T19:43:06+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wp-all-import-pro\wp-all-import-pro.php on line 862
+
+2021-07-21T19:43:14+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\codepress-admin-columns\classes\ListScreen\Post.php on line 3
+
+2021-07-21T19:43:17+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\font-awesome\includes\class-fontawesome-release-provider.php on line 7
+
+2021-07-21T19:43:50+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordpress-seo\src\integrations\third-party\w3-total-cache.php on line 3
+
+2021-07-21T23:35:55+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING), expecting ';' or ',' in D:\OpenServer\domains\rubicon.loc\wp-content\themes\rubicon\front-page.php on line 49
+

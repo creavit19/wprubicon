@@ -10,3 +10,25 @@
 
 2021-07-19T13:46:59+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\utils.php on line 443
 
+2021-07-19T13:53:55+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordpress-seo\src\generators\schema\breadcrumb.php on line 3
+
+2021-07-19T13:58:30+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\utils.php on line 445
+
+2021-07-19T14:15:41+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\utils.php on line 445
+
+2021-07-19T14:28:47+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\utils.php on line 434
+
+2021-07-19T14:42:02+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\parser\lexer.php on line 103
+
+2021-07-19T17:24:25+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\parser\lexer.php on line 212
+
+2021-07-19T17:28:14+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-includes\rest-api\class-wp-rest-server.php on line 878
+
+2021-07-19T17:36:45+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\utils.php on line 502
+
+2021-07-19T17:43:59+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\parser\lexer.php on line 591
+
+2021-07-19T17:56:47+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\plugins\wordfence\vendor\wordfence\wf-waf\src\lib\parser\lexer.php on line 169
+
+2021-07-19T20:22:21+00:00 CRITICAL Maximum execution time of 60 seconds exceeded in D:\OpenServer\domains\rubicon.loc\wp-content\themes\rubicon\inc\for_templates\ajax-fbi-wanted.php on line 52
+

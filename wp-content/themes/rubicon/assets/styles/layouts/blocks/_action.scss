@@ -1,0 +1,88 @@
+#action-block {
+  overflow: hidden;
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  border-radius: 0.3em;
+  z-index: 999999;
+  width: 400px;
+  height: 300px;
+}
+
+.action-wrapper {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.counter-line {
+  position: absolute;
+  padding: 0 1.5rem;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  height: 5em;
+
+  a {
+    font-size: 1.7rem;
+    display: block;
+    background-color: #14bca8;
+    text-align: center;
+    padding: 0.3em 1.6em;
+    color: #fff;
+    border-radius: 3px;
+
+    &:hover {
+      color: yellow;
+      text-decoration: none;
+    }
+  }
+}
+
+.counter-block {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.counter-block .counter {
+  font-size: 1em;
+  line-height: 1em;
+  padding-bottom: 0.6em;
+}
+
+[data-role="seconds"]::after {
+  content: 'Seconds';
+}
+
+[data-role="minutes"]::after {
+  content: 'Minutes';
+}
+
+[data-role="hours"]::after {
+  content: 'Hours';
+}
+
+[data-role="days"]::after {
+  content: 'Days';
+}
+
+.counter-line .counter-block .counter > div {
+  display: inline-block;
+  position: relative;
+}
+
+.counter-line .counter-block .counter > div::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 0.35em;
+  top: 2.5em;
+  right: 0;
+}

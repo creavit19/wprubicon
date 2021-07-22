@@ -9,13 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Слайдер
     let mainSlider = document.getElementById('main-slider');
-    let instanceMainSlider = window.M.Carousel.init(mainSlider,  {fullWidth: true, indicators: true});
-    setInterval(()=>{
-      if(instanceMainSlider){
-        instanceMainSlider.next();
-      }
-    }, 3000);
-
+    if(mainSlider){
+      let instanceMainSlider = window.M.Carousel.init(mainSlider,  {fullWidth: true, indicators: true});
+      setInterval(()=>{
+        if(instanceMainSlider){
+          instanceMainSlider.next();
+        }
+      }, 3000);
+    }
     // Select
     $('.select-country').select2();
     window.select = document.querySelector('.select-country');
@@ -28,6 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if(themeVars.is_auth) document.getElementById('mobile-demo').style.top = '46px';
     
     window.spinner = document.querySelector('.spinner');
+
+    countdownToEvent('counter');
+    typing('type');
 });
 
 // Функция запроса данных
@@ -140,4 +144,90 @@ function showSpiner(){
 // Функция скрытия заставки загрузки
 function hideSpiner(){
   window.spinner.style.visibility = 'hidden';
+}
+
+function typing(id, cursor = '|'){
+  window.typingBlock = {};
+  window.typingBlock.elem = document.getElementById(id);
+  if(!window.typingBlock.elem) return false;
+  window.typingBlock.cursor = cursor;
+  window.typingBlock.data = window.typingBlock.elem.innerText.split('#');
+  for(let i=0; i < window.typingBlock.data.length; i++){
+    window.typingBlock.data[i] = window.typingBlock.data[i].split('');
+  }
+  window.typingBlock.elem.innerText = '';
+  window.typingBlock.currentText = '';
+  window.typingBlock.phrase = -1;
+  window.typingBlock.counter = -1;
+  window.typingBlock.elem.style.opacity = '1';
+  setInterval(function(){
+    window.typingBlock.counter++;
+    if(window.typingBlock.counter >= 0){
+      if(window.typingBlock.counter == 0){
+        window.typingBlock.currentText = '';
+        window.typingBlock.elem.innerText = '';
+        window.typingBlock.phrase++;
+        if(window.typingBlock.phrase >= window.typingBlock.data.length){
+          window.typingBlock.phrase = 0;
+        }
+      }
+      if(window.typingBlock.counter < window.typingBlock.data[window.typingBlock.phrase].length){
+        window.typingBlock.currentText = window.typingBlock.currentText + window.typingBlock.data[window.typingBlock.phrase][window.typingBlock.counter];
+        window.typingBlock.elem.innerText = window.typingBlock.currentText  + window.typingBlock.cursor;
+      }else{
+        window.typingBlock.counter = -6;
+      }
+    }
+  }, 100);
+}
+
+function countdownToEvent(id, timeIsUp = 'Time is over...'){
+  window.countdown = {};
+  window.countdown.counter = document.getElementById(id);
+  if(!window.countdown.counter) return false;
+  window.countdown.timeIsUp = timeIsUp;
+  window.countdown.days = window.countdown.counter.querySelector('[data-role="days"]');
+  window.countdown.hours = window.countdown.counter.querySelector('[data-role="hours"]');
+  window.countdown.minutes = window.countdown.counter.querySelector('[data-role="minutes"]');
+  window.countdown.seconds = window.countdown.counter.querySelector('[data-role="seconds"]');
+  let eventTime = Math.round(Date.parse(window.countdown.counter.getAttribute('data-dateto')) / 1000);
+  let interval = eventTime - Math.round( Date.parse(new Date()) / 1000 );
+  if(interval <= 0) { window.countdown.counter.innerHTML = timeIsUp; return }
+  let seconds = Math.floor(interval % 60);
+  let minutes = Math.floor((interval / 60) % 60);
+  let hours = Math.floor((interval / (60 * 60)) % 24);
+  window.countdown.seconds.innerText = seconds < 10 ? '0' + seconds : seconds;
+  window.countdown.minutes.innerText = minutes < 10 ? '0' + minutes : minutes;
+  window.countdown.hours.innerText = hours < 10 ? '0' + hours : hours;
+  window.countdown.days.innerText = Math.floor(interval / (60 * 60 * 24));
+  window.countdown.timerId = setInterval(function(){
+    let sec = parseInt(window.countdown.seconds.innerText);
+    if(sec != 0){
+      sec--;
+      window.countdown.seconds.innerText = sec < 10 ? '0' + sec : sec;
+    }else{
+      window.countdown.seconds.innerText = 59;
+      let min = parseInt(window.countdown.minutes.innerText);
+      if(min != 0){
+        min--;
+        window.countdown.minutes.innerText = min < 10 ? '0' + min : min;
+      }else{
+        window.countdown.minutes.innerText = 59;
+        let hour = parseInt(window.countdown.hours.innerText);
+        if(hour != 0){
+          hour--;
+          window.countdown.hours.innerText = hour < 10 ? '0' + hour : hour;
+        }else{
+          window.countdown.hours.innerText = 23;
+          let day = parseInt(window.countdown.days.innerText);
+          if(day != 0){
+            window.countdown.days.innerText = --day;
+          }else{
+            window.countdown.counter.innerHTML = window.countdown.timeIsUp;
+            clearInterval(window.countdown.timerId);
+          }
+        }
+      }
+    }
+  }, 1000);
 }

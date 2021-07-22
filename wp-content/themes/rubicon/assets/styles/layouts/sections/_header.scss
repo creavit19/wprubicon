@@ -30,3 +30,22 @@
   color: #ccc;
   padding: 3px 0;
 }
+
+a.header-link-cart {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  width: 2em;
+  height: 2em;
+  line-height: 2.08em;
+  border-radius: 50%;
+  background-color: #a0a0a0;
+  margin-right: 0.5em;
+  padding-right: 0.15em;
+  margin-top: 1em;
+
+  &:hover {
+    color: yellow;
+  }
+}

@@ -19,9 +19,12 @@ $header = new ThemeHeader();
               <div class="row">
                 <?php echo $header->get_logo(); ?>
                 <div class="col s12 m5 left-align">
+                  <div class="right">
+                    <?php echo $header->get_link_cart(); ?>
+                  </div>
                   <?php echo $header->get_email(); ?>
-                  <?php echo $header->get_phone(); ?>
-                </div>
+                  <?php echo $header->get_phone(); ?> 
+                </div>  
               </div>
             </div>
             <nav class='col s12 brown lighten-2'>
@@ -45,4 +48,4 @@ $header = new ThemeHeader();
                 ) );
             ?>		  
         </header>
-      <main class="ex-clearfix">
+      <main class="main-content ex-clearfix">

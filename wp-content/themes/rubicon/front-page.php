@@ -1,57 +1,36 @@
-<?php get_header(); ?>
+<?php get_header(); 
+$slider_images = get_field('slider');
+?>
 <div class="col s12 clear-padding">
   <div class="carousel carousel-slider" id="main-slider">
-    <a class="carousel-item" href="#one!"><img src="<?php echo THEME_DIR_URI.'/dist/images/slider/' ?>slide1.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="<?php echo THEME_DIR_URI.'/dist/images/slider/' ?>slide2.jpg"></a>
-    <a class="carousel-item" href="#three!"><img src="<?php echo THEME_DIR_URI.'/dist/images/slider/' ?>slide3.jpg"></a>
+  <?php foreach($slider_images as $slider_img) { ?>
+    <div class="carousel-item"><img src="<?php echo $slider_img['image']; ?>"></div> 
+  <?php } ?>
   </div>
 </div>
 <div class="col s12">
   <div class="row">
+  <?php
+  $categories = get_terms(array(
+    'taxonomy' => 'product_cat'
+  ));
+  foreach($categories as $category){
+    if($category->parent != 0 or $category->slug == 'uncategorized') continue;
+    $thumbnail_id = get_term_meta( $category->term_id, 'thumbnail_id', true );
+    $image_url = wp_get_attachment_url( $thumbnail_id );
+  ?>
     <div class="col s12 l6 xl3">
       <div class="planning">
-        <a href="#">
+        <a href="<?php echo get_term_link($category->term_id, 'product_cat'); ?>">
           <div class="service_block">
-            <img src="<?php echo THEME_DIR_URI.'/dist/images/'?>icon1.png" />						
-            <div class="link_title">Home</div>
-            <div class="service_txt">Any small home repairs will be a pleasant hobby</div>
+            <img src="<?php echo $image_url; ?>" />						
+            <div class="link_title"><?php echo $category->name; ?></div>
+            <div class="service_txt"><?php echo $category->description; ?></div>
           </div>
         </a>
       </div>
     </div>
-    <div class="col s12 l6 xl3">
-      <div class="planning">
-        <a href="#">
-          <div class="service_block">
-            <img src="<?php echo THEME_DIR_URI.'/dist/images/' ?>icon2.png" />						
-            <div class="link_title">Job</div>
-            <div class="service_txt">Professional tools of the highest quality and long service life</div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col s12 l6 xl3">
-      <div class="planning">
-        <a href="#">
-          <div class="service_block">
-            <img src="<?php echo THEME_DIR_URI.'/dist/images/' ?>icon3.png" />						
-            <div class="link_title">Garden</div>
-            <div class="service_txt">Nunc consequat iaculis risus, nec eleifend ligula tempus in. Sed orci</div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col s12 l6 xl3">
-      <div class="planning">
-        <a href="#">
-          <div class="service_block">
-            <img src="<?php echo THEME_DIR_URI.'/dist/images/' ?>icon4.png" />						
-            <div class="link_title">Hike</div>
-            <div class="service_txt">Tools brand Rubicon become an indispensable tool in the campaign</div>
-          </div>
-        </a>
-      </div>
-    </div>
+  <?php } ?>
   </div>
 </div>
 <div class="col s12 brown lighten-2">
@@ -59,24 +38,19 @@
 </div>
 <div class="col s12">
   <div class="row">
+    <?php
+    $promo = get_terms(array(
+      'taxonomy' => 'product_promo'
+    ));
+    foreach($promo as $item){
+    ?>
     <div class="col s12 l4">
-      <a href="#" class='brown-text text-lighten-2 products'>
-        <img src="<?php echo THEME_DIR_URI.'/dist/images/' ?>post_prev1.jpg" alt="">
-        <h3>Crimpers</h3>
+      <a href="<?php echo get_term_link($item->term_id, 'product_promo'); ?>" class='brown-text text-lighten-2 products'>
+        <img src="<?php echo get_field('image', 'product_promo_'.$item->term_id); ?>" alt="">
+        <h3><?php echo $item->name; ?></h3>
       </a>
     </div>
-    <div class="col s12 l4">
-      <a href="#" class='brown-text text-lighten-2 products'>
-        <img src="<?php echo THEME_DIR_URI.'/dist/images/' ?>post_prev2.jpg" alt="">
-        <h3>Wrench</h3>
-      </a>
-    </div>
-    <div class="col s12 l4">
-      <a href="#" class='brown-text text-lighten-2 products'>
-        <img src="<?php echo THEME_DIR_URI.'/dist/images/' ?>post_prev3.jpg" alt="">
-        <h3>Screwdrivers</h3>
-      </a>
-    </div>
+    <?php } ?>
   </div>
 </div>
 <?php get_footer(); ?>
